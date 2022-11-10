@@ -1,28 +1,34 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <AButton>this is a button</AButton>
+    <DatePicker />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import { DatePicker, Button } from 'ant-design-vue'
+import DatePicker from 'ant-design-vue/es/date-picker'; 
+import 'ant-design-vue/es/date-picker/style/css'; 
+import Button from 'ant-design-vue/es/button'; 
+import 'ant-design-vue/es/button/style/css'; 
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    DatePicker,
+    AButton: Button
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
 }
 </style>
