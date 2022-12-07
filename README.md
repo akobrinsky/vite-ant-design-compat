@@ -1,4 +1,4 @@
-# shmuelidate
+# Vite and Ant Design Vue
 
 ## Project setup
 ```
